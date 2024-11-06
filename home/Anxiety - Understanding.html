@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title id="title">Anxiety</title>
+        <style>
+             #container-box-1{
+                display: none;
+            }
+            
+            #container-box-3{
+                display: none;
+            }
+            
+            #container-box-4{
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="home-nav">
+            
+        </div>
+
+        <main id="Anxiety">
+            <div id="container-box">
+                <img src="Images/bx-shape-circle.svg" height="30px" width="30px">
+
+                <h1>Understanding Anxiety</h1>
+
+                <h3>Anxiety is our body's natural response to stress</h3>
+
+                <button class="home-healing-program-selection-btn" onclick="showContainerBox1()" style="background-color: #2D493A;cursor: pointer;">Continue</button>
+            </div>
+
+            <div id="container-box-1" >
+                <img src="Images/bx-shape-circle.svg" height="30px" width="30px">
+
+                <h3>When we are anxious we are met with feelings of frustation <br>
+                nervousness,restlessness and we are unable to focus on tasks.
+                </h3>
+
+                <button class="home-healing-program-selection-btn" onclick="showContainerBox3()" style="background-color: #2D493A;cursor: pointer;">Continue</button>
+            </div>
+
+            <div id="container-box-3" class="hidden">
+                <img src="Images/bx-shape-circle.svg" height="30px" width="30px">
+
+                <h3>Learning how to <br>
+                manage your anxiety <br>
+                will help you feel calmer <br>
+                and be less affected by everyday triggers.
+                </h3>
+
+                
+                <button class="home-healing-program-selection-btn" onclick="showContainerBox4()" style="background-color: #2D493A;cursor: pointer;">Continue</button>
+                
+            </div>
+
+            <div id="container-box-4" class="hidden">
+                <img src="Images/bx-shape-circle.svg" height="30px" width="30px">
+
+                <h1>Using AI well asses your anxiety levels</h1>
+
+                <h3>Answer the following questions
+                </h3>
+
+                <h3 class="qoute">Dont hate yourself for everything you arent.Instead, love yourslef for everything you</h3>
+
+                <button class="home-healing-program-selection-btn"  style="background-color: #2D493A;cursor: pointer;"><a href="Anxiety Questions.html">Continue</a></button>
+            </div>
+        </main>
+
+        <script>
+            function showContainerBox1() {
+            document.getElementById('container-box').style.display = 'none';
+            document.getElementById('container-box-1').style.display = 'block';
+            document.getElementById('container-box-3').style.display = 'none';
+          }
+        
+          /*
+          function showContainerBox1From3() {
+            document.getElementById('container-box').style.display = 'none';
+            document.getElementById('container-box-1').style.display = 'flex';
+            document.getElementById('container-box-3').style.display = 'none';
+          }
+          */
+        
+          /*
+          function showContainerBox3hide() {
+            document.getElementById('container-box').style.display = 'none';
+            document.getElementById('container-box-1').style.display = 'none';
+            document.getElementById('container-box-3').style.display = 'flex';
+            document.getElementById('container-box-4').style.display = 'none';
+          }
+          */
+        
+          function showContainerBox3() {
+            document.getElementById('container-box').style.display = 'none';
+            document.getElementById('container-box-1').style.display = 'none';
+            document.getElementById('container-box-3').style.display = 'block';
+          }
+        
+          function showContainerBox4() {
+            document.getElementById('container-box').style.display = 'none';
+            document.getElementById('container-box-1').style.display = 'none';
+            document.getElementById('container-box-3').style.display = 'none';
+            document.getElementById('container-box-4').style.display = 'block';
+          }
+        
+          /*
+          function showContainerBox() {
+              document.getElementById('container-box').style.display = 'flex';
+              document.getElementById('container-box-1').style.display = 'none';
+              document.getElementById('container-box-3').style.display = 'none';
+            }
+            */
+        </script>
+        
+    </body>
+</html>

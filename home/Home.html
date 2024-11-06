@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title id="title">Home</title>
+        <style>
+   /* Import Google font - Poppins */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+   
+   
+   .chatbot-toggler {
+     position: fixed;
+     bottom: 30px;
+     right: 35px;
+     outline: none;
+     border: none;
+     height: 50px;
+     width: 50px;
+     display: flex;
+     cursor: pointer;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: #724ae8;
+     transition: all 0.2s ease;
+   }
+   body.show-chatbot .chatbot-toggler {
+     transform: rotate(90deg);
+   }
+   .chatbot-toggler span {
+     color: #fff;
+     position: absolute;
+   }
+   .chatbot-toggler span:last-child,
+   body.show-chatbot .chatbot-toggler span:first-child  {
+     opacity: 0;
+   }
+   body.show-chatbot .chatbot-toggler span:last-child {
+     opacity: 1;
+   }
+   .chatbot {
+     position: absolute;
+     top:30px;
+     right: 35px;
+     bottom: 90px;
+     width: 420px;
+     background: #fff;
+     border-radius: 15px;
+     overflow: hidden;
+     opacity: 0;
+     pointer-events: none;
+     transform: scale(0.5);
+     transform-origin: bottom right;
+     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                 0 32px 64px -48px rgba(0,0,0,0.5);
+     transition: all 0.1s ease;
+     z-index: 999;
+   }
+   body.show-chatbot .chatbot {
+     opacity: 1;
+     pointer-events: auto;
+     transform: scale(1);
+   }
+   .chatbot header {
+     padding: 16px 0;
+     position: relative;
+     text-align: center;
+     color: #fff;
+     background: #724ae8;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   }
+   .chatbot header span {
+     position: absolute;
+     right: 15px;
+     top: 50%;
+     display: none;
+     cursor: pointer;
+     transform: translateY(-50%);
+   }
+   header h2 {
+     font-size: 1.4rem;
+   }
+   .chatbot .chatbox {
+     overflow-y: auto;
+     height: 510px;
+     padding: 30px 20px 100px;
+   }
+   .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+     width: 6px;
+   }
+   .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+     background: #fff;
+     border-radius: 25px;
+   }
+   .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+     background: #ccc;
+     border-radius: 25px;
+   }
+   .chatbox .chat {
+     display: flex;
+     list-style: none;
+   }
+   .chatbox .outgoing {
+     margin: 20px 0;
+     justify-content: flex-end;
+   }
+   .chatbox .incoming span {
+     width: 32px;
+     height: 32px;
+     color: #fff;
+     cursor: default;
+     text-align: center;
+     line-height: 32px;
+     align-self: flex-end;
+     background: #724ae8;
+     border-radius: 4px;
+     margin: 0 10px 7px 0;
+   }
+   .chatbox .chat p {
+     white-space: pre-wrap;
+     padding: 12px 16px;
+     border-radius: 10px 10px 0 10px;
+     max-width: 75%;
+     color: #fff;
+     font-size: 0.95rem;
+     background: #724ae8;
+   }
+   .chatbox .incoming p {
+     border-radius: 10px 10px 10px 0;
+   }
+   .chatbox .chat p.error {
+     color: #721c24;
+     background: #f8d7da;
+   }
+   .chatbox .incoming p {
+     color: #000;
+     background: #f2f2f2;
+   }
+   .chatbot .chat-input {
+     display: flex;
+     gap: 5px;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     background: #fff;
+     padding: 3px 20px;
+     border-top: 1px solid #ddd;
+   }
+   .chat-input textarea {
+     height: 55px;
+     width: 100%;
+     border: none;
+     outline: none;
+     resize: none;
+     max-height: 180px;
+     padding: 15px 15px 15px 0;
+     font-size: 0.95rem;
+   }
+   .chat-input span {
+     align-self: flex-end;
+     color: #724ae8;
+     cursor: pointer;
+     height: 55px;
+     display: flex;
+     align-items: center;
+     visibility: hidden;
+     font-size: 1.35rem;
+   }
+   .chat-input textarea:valid ~ span {
+     visibility: visible;
+   }
+   
+   @media (max-width: 490px) {
+     .chatbot-toggler {
+       right: 20px;
+       bottom: 20px;
+     }
+     .chatbot {
+       right: 0;
+       bottom: 0;
+       height: 100%;
+       border-radius: 0;
+       width: 100%;
+     }
+     .chatbot .chatbox {
+       height: 90%;
+       padding: 25px 15px 100px;
+     }
+     .chatbot .chat-input {
+       padding: 5px 15px;
+     }
+     .chatbot header span {
+       display: block;
+     }
+   }
+       </style>
+    </head>
+
+    <body>
+        <div class="home-nav">
+            <div class="home-logo">
+                <h3 style="margin-left: 20px;">Rich/<u style="color:#80B541;">Minds</u></h3>
+            </div>
+
+            <div class="home-navigation-menu">
+                <ul>
+                    <li id="home" style="color:#80B541;font-weight:800;">Home</li>
+                    <li><a href="servicess.html">Services</a></li>
+                    <li>Specialists</li>
+                    <li>Our clinic</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home-main-page">
+            <div class="home-main-page-inner-div-1">
+                <h1>
+                    We take care of your <br>
+                    mental & physical <br>
+                    health
+                </h1>
+
+                <button class="home-main-page-inner-div-1-btn">Watch the presentation</button>
+
+                <div class="home-main-page-inner-div-1-inner-most-div">
+                    
+                    <div>
+                        <p>View more details</p>
+                    </div>
+
+                    <div>
+                        <p>Contact Us</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="home-main-page-inner-div-2">
+                <img src="Images/result.png" height="750" width="670px" >
+            </div>
+
+        </div>
+
+        
+        <section>
+
+            <h1 id="home-sect-h1">See our natural healing program</h1>
+
+            <div class="home-healing-program-selection">
+                <div>
+                    <img src="Images/pexels-yaroslav-shuraev-7041608.jpg">
+
+                    <div class="home-healing-program-selection-inner-div">
+                    <button class="home-healing-program-selection-btn" style="width:90%;"><a href="Meditations.html">Read More</a></button>
+
+                    <h2>Meditations</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="Images/pexels-alisha-mishra-1346347.jpg">
+
+                    <div class="home-healing-program-selection-inner-div">
+                        <button class="home-healing-program-selection-btn"><a href="Anxiety.html">Read More</a></button>
+    
+                        <h2>Anxiety and Overthinking</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="Images/pexels-egor-kamelev-785695.jpg">
+                
+                    <div class="home-healing-program-selection-inner-div">
+                        <button class="home-healing-program-selection-btn" style="width:90%;"><a href="Journal.html">Read More</a></button>
+    
+                        <h2>Journaling</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="Images/pexels-elle-hughes-1549280.jpg">
+                
+                    <div class="home-healing-program-selection-inner-div">
+                        <button class="home-healing-program-selection-btn"><a href="community forum/community forum/chat.html">Read More</a></button>
+    
+                        <h2>Chat</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="Images/pexels-photo-931018.jpeg">
+                
+                    <div class="home-healing-program-selection-inner-div">
+
+                        <button class="home-healing-program-selection-btn"><a href="community forum/community forum/communityforum.html.html">Read More</a></button>
+                        
+                        <h2>Community Chat</h2>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div class="home-healing-program-selection-inner-div-see-more">
+                        <img src="Images/bx-dots-horizontal-rounded.svg">
+                    </div>
+
+                    
+
+                    <h2>See More</h2>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-second-middle-section-div">
+                <div class="home-second-middle-section-div-inner-div-1">
+                    <img src="Images/pexels-francesco-ungaro-4322027.jpg"  style="object-fit:cover;">
+                </div>
+
+                <div class="home-second-middle-section-div-inner-div-2">
+                    <img src="Images/pexels-darius-krause-2609107.jpg"  style="object-fit:cover;">
+
+                    <div class="home-second-middle-section-div-inner-div-2-innermost-div-1">
+                        <h1>We take care of <br> mental & physical <br> health</h1>
+
+                        <P>
+                          Mental and physical health care are two interconnected aspects of overall well-being, each influencing the other in profound ways.<br>
+                           Mental health encompasses emotional, psychological, and social well-being, while physical health pertains to the proper functioning<br>
+                          of the body's systems and organs. Both are integral components of a balanced and fulfilling life.
+
+                        </P>
+
+                        <div class="home-second-middle-section-div-inner-div-2-innermost-div-1-inner-outer-most-div">
+                            <div>
+                                <img src="Images/bx-bowling-ball.svg">
+
+                                <h3>We offer supportive and leading approaches to mental health problems</3>
+                            </div>
+
+                            <div>
+                                <img src="Images/bx-cuboid.svg">
+
+                                <h3>Approaches designed to help and ease your struggles</3>
+                            </div>
+
+                            <div>
+                                <img src="Images/bx-heart-circle.svg">
+
+                                <h3>Clinically tested Methods that have also been used for decades</3>
+                            </div>
+
+                            <div>
+                                <img src="Images/bx-shape-circle.svg">
+
+                                <h3>We are here for you, let us assist you in your time of need and vulnerability</3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-second-middle-section-div-inner-div-3">
+                    <h1>
+                       Community Based Forums <br>
+                        that foster communication and sharing
+                    </h1>
+
+                    <p>
+                      In recent years, there has been a growing recognition of the intricate relationship between mental and physical health.
+                       Research has consistently shown that mental health conditions, such as depression, anxiety, and stress, can have 
+                       significant impacts on physical health outcomes, including cardiovascular health, immune function, and even life 
+                       expectancy. Similarly, chronic physical illnesses, such as diabetes, cancer, and autoimmune disorders, 
+                       can take a toll on mental well-being, leading to increased rates of depression, anxiety, and other psychiatric disorders.
+                    </p>
+
+                    <button class="home-second-middle-section-div-inner-div-3-btn">
+                        Contact us with
+                    </button>
+                </div>
+
+                <div class="home-second-middle-section-div-inner-div-4">
+                    <img src="Images/pexels-shvets-production-7176027.jpg">
+                    <div>
+                        <h1>Dr.Mellisa Methews</h1>
+
+                        <P>Therapist</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-user-reviews">
+                <div class="home-user-image">
+                    <img src="Images/employee-3.jpg">
+                </div>
+
+                <div class="home-user-comment">
+                    <P>
+                      You don't have to be positive all the time. It's perfectly okay to feel sad, angry,<br>
+                      annoyed, frustrated, scared, or anxious. Having feelings doesn't make you a negative person.<br>
+                       It makes you human.
+                    </P>
+                </div>
+
+                <div class="home-user-icons">
+                    <img src="Images/bx-dots-horizontal-rounded - 1.svg">
+                    <p style="color:#80B541;font-weight: 700;">Jenny Worse</p>
+                    <br>
+                    <p style="color:grey;font-size: 0.9rem;">clabio Hyue</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="home-end-bottom-div">
+            <h2>Contact and ask about more details</h2>
+
+            <button class="home-end-bottom-div-btn">Contact with Us</button>
+        </div>
+
+        <div class="chat-app-icon">
+           <!-- <img src="Images/bxl-whatsapp.svg" > -->
+           <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            const chatbotToggler = document.querySelector(".chatbot-toggler");
+       const closeBtn = document.querySelector(".close-btn");
+       const chatbox = document.querySelector(".chatbox");
+       const chatInput = document.querySelector(".chat-input textarea");
+       const sendChatBtn = document.querySelector(".chat-input span");
+       
+       let userMessage = null; // Variable to store user's messageconst 
+       let API_KEY = "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"; // Paste your API key here
+       const inputInitHeight = chatInput.scrollHeight;
+       
+       const createChatLi = (message, className) => {
+           // Create a chat <li> element with passed message and className
+           const chatLi = document.createElement("li");
+           chatLi.classList.add("chat", `${className}`);
+           let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+           chatLi.innerHTML = chatContent;
+           chatLi.querySelector("p").textContent = message;
+           return chatLi; // return chat <li> element
+       }
+       
+       const generateResponse = (chatElement) => {
+           const API_URL = "https://api.openai.com/v1/chat/completions";
+           const messageElement = chatElement.querySelector("p");
+       
+           // Define the properties and message for the API request
+           const requestOptions = {
+               method: "POST",
+               headers: {
+                   "Content-Type": "application/json",
+                   "Authorization": `Bearer ${API_KEY}`
+               },
+               body: JSON.stringify({
+                   model: "gpt-3.5-turbo",
+                   messages: [{role: "user", content: userMessage}],
+               })
+           }
+       
+           // Send POST request to API, get response and set the reponse as paragraph text
+           fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+               console.log(data);
+           }).catch((error) => {
+               console.log(error);	
+           })
+       }
+       
+       const handleChat = () => {
+           userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+           if(!userMessage) return;
+       
+           // Clear the input textarea and set its height to default
+           chatInput.value = "";
+           chatInput.style.height = `${inputInitHeight}px`;
+       
+           // Append the user's message to the chatbox
+           chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+           chatbox.scrollTo(0, chatbox.scrollHeight);
+           
+           setTimeout(() => {
+               // Display "Thinking..." message while waiting for the response
+               const incomingChatLi = createChatLi("Thinking...", "incoming");
+               chatbox.appendChild(incomingChatLi);
+               chatbox.scrollTo(0, chatbox.scrollHeight);
+               generateResponse(incomingChatLi);
+           }, 600);
+       }
+       
+       chatInput.addEventListener("input", () => {
+           // Adjust the height of the input textarea based on its content
+           chatInput.style.height = `${inputInitHeight}px`;
+           chatInput.style.height = `${chatInput.scrollHeight}px`;
+       });
+       
+       chatInput.addEventListener("keydown", (e) => {
+           // If Enter key is pressed without Shift key and the window 
+           // width is greater than 800px, handle the chat
+           if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+               e.preventDefault();
+               handleChat();
+           }
+       });
+       
+       sendChatBtn.addEventListener("click", handleChat);
+       closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+       chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+       </script>
+
+        <footer>
+            <div>
+                <ul>
+                    <li><h3 style="color:#80B541;">Location</h3></li>
+                    <li>291 Helen Josopeh Street </li>
+                    <li>Pretoria Central</li>
+                    <li>0002</li>
+
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><h3 style="color:#80B541;">Navigation</h3></li>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Specialists</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><h3 style="color:#80B541;">Services</h3></li>
+                    <li>Personalised Meditation</li>
+                    <li>Peer-Support Groups</li>
+                    <li>Chatbot</li>
+                    <li>Anxiety Tracking</li>
+                    <li>Personalised Journaling</li>
+                    <li>Mindfullness Activities</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><h3 style="color:#80B541;">Socials</h3></li>
+                    <li>X</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Linkdln</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script src="Home.js"></script>
+</html>
