@@ -1,0 +1,79 @@
+main .right .first p
+{
+    font-size: var(--fs14);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: darkgrey;
+}
+          <div class="login-left">
+                            <form action="#">
+                                <input type="text" placeholder="username">
+                                <div class="form-group">
+                                    <input type="text" placeholder="password">
+                                    <div>
+                                        <i class="fa-regualr fa-eye"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Forget your password?</a>
+                                <div class="remember">
+                                <input type="checkbox" name="remember" value="1" checked/>
+                                <label for="remember"stay logged in></label>
+                                </div>
+                                <button type="submit" class=""btn btn-red>Log in</button>
+                            </form>
+                        </div>
+                        <div class="line"></div>
+                        <div class="login-right">
+                            <a href="#" class="btn">
+                                <i class="fa-brands fa-sqSuare-facebook"></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                            <a href="#" class="btn">
+                                <img src="images/google.jpg" alt="">
+                                <span>Login with Google</span>
+                            </a>
+                        </div>
+						          <div class="login-left">
+                            <form action="#">
+                                <input type="text" placeholder="username">
+                                <div class="form-group">
+                                    <input type="text" placeholder="password">
+                                    <div>
+                                        <i class="fa-regualr fa-eye"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Forget your password?</a>
+                                <div class="remember">
+                                <input type="checkbox" name="remember" value="1" checked/>
+                                <label for="remember"stay logged in></label>
+                                </div>
+                                <button type="submit" class=""btn btn-red>Log in</button>
+                            </form>
+                        </div>
+                        <div class="line"></div>
+                        <div class="login-right">
+                            <a href="#" class="btn">
+                                <i class="fa-brands fa-sqSuare-facebook"></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                            <a href="#" class="btn">
+                                <img src="images/google.jpg" alt="">
+                                <span>Login with Google</span>
+                            </a>
+                        </div>
+						<div class="overlay">
+            <div class="login" id="login">
+                <div class="top">
+                    <h2>Log in</h2>
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+                <div class="row">
+				<div class="overlay">
+            <div class="login" id="login">
+                <div class="top">
+                    <h2>Log in</h2>
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+                <div class="row">
+				
+				120

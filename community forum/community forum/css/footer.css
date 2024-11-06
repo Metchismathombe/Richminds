@@ -1,0 +1,56 @@
+footer
+{
+    background-color: #232324;
+    padding: 1rem 0 3rem 0;
+  
+    font-size: var(--fs14);
+}
+
+footer ul .conatiner ul
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+footer ul .conatiner ul li
+{
+position: relative;
+margin-right: 0.5rem;
+
+}
+
+footer ul .conatiner ul li a
+{
+    color: var(--whitecolor);
+    text-transform: capitalize;
+    padding: 0.2rem 0.4rem;
+    transition: all 0.3s ease;
+}
+
+footer ul .conatiner ul li:last-child
+{
+    margin-left: 1rem;
+}
+
+footer ul .conatiner ul li:last-child::before
+{
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: var(--mediumgraycolor);
+    top: 50%;
+    left: -0.8rem;
+    transform: translateY(-50%);
+}
+footer .conatiner p{
+    margin-bottom: 1rem;
+    color: var(--mediumgraycolor);
+}
+
+footer .conatiner p:nth-of-type(3)
+{
+    max-width: 75rem;
+}
