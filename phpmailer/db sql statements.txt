@@ -1,0 +1,26 @@
+-- Create the mentalhealth database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS mentalhealth;
+
+-- Switch to the mentalhealth database
+USE mentalhealth;
+
+-- Table to store user access information
+CREATE TABLE IF NOT EXISTS useraccess (
+    id INT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    surname VARCHAR(50) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    Verification_Code VARCHAR(25) NOT NULL,
+    Verification_at DATETIME DEFAULT NULL
+);
+
+-- Table to store contact information from users
+CREATE TABLE IF NOT EXISTS contact_us (
+    id INT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    phone VARCHAR(20) NOT NULL,
+    message TEXT NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL
+);

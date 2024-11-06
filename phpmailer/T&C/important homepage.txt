@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Management System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Farming Management System</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="transparent-container">
+        <div class="component">
+            <h2>Assets</h2>
+            <div class="images">
+                <img src="assets1.jpg" alt="Asset 1">
+                <img src="assets2.jpg" alt="Asset 2">
+                <img src="assets3.jpg" alt="Asset 3">
+                <img src="assets4.jpg" alt="Asset 4">
+            </div>
+            <p>This component helps in managing and tracking all the assets within the farm, ensuring they are maintained and utilized effectively.</p>
+            <button onclick="location.href='assets.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Inventory</h2>
+            <div class="images">
+                <img src="inventory1.jpg" alt="Inventory 1">
+                <img src="inventory2.jpg" alt="Inventory 2">
+                <img src="inventory3.jpg" alt="Inventory 3">
+                <img src="inventory4.jpg" alt="Inventory 4">
+            </div>
+            <p>The inventory component allows you to manage stock levels, monitor supply and demand, and track the movement of goods across the farm.</p>
+            <button onclick="location.href='inventory.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Livestock</h2>
+            <div class="images">
+                <img src="livestock1.jpg" alt="Livestock 1">
+                <img src="livestock2.jpg" alt="Livestock 2">
+                <img src="livestock3.jpg" alt="Livestock 3">
+                <img src="livestock4.jpg" alt="Livestock 4">
+            </div>
+            <p>The livestock component tracks animal health, breeding, and production, helping you maintain the well-being and productivity of your herd.</p>
+            <button onclick="location.href='livestock.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Crops</h2>
+            <div class="images">
+                <img src="crops1.jpg" alt="Crops 1">
+                <img src="crops2.jpg" alt="Crops 2">
+                <img src="crops3.jpg" alt="Crops 3">
+                <img src="crops4.jpg" alt="Crops 4">
+            </div>
+            <p>Manage your crop production, monitor growth, plan harvests, and optimize yield with the crops component.</p>
+            <button onclick="location.href='crops.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Fields</h2>
+            <div class="images">
+                <img src="fields1.jpg" alt="Field 1">
+                <img src="fields2.jpg" alt="Field 2">
+                <img src="fields3.jpg" alt="Field 3">
+                <img src="fields4.jpg" alt="Field 4">
+            </div>
+            <p>Field management allows you to track the usage, condition, and rotation of your fields to maximize productivity and sustainability.</p>
+            <button onclick="location.href='fields.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Orders</h2>
+            <div class="images">
+                <img src="orders1.jpg" alt="Orders 1">
+                <img src="orders2.jpg" alt="Orders 2">
+                <img src="orders3.jpg" alt="Orders 3">
+                <img src="orders4.jpg" alt="Orders 4">
+            </div>
+            <p>Handle incoming and outgoing orders efficiently, tracking their status from placement to fulfillment.</p>
+            <button onclick="location.href='orders.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Tasks</h2>
+            <div class="images">
+                <img src="tasks1.jpg" alt="Task 1">
+                <img src="tasks2.jpg" alt="Task 2">
+                <img src="tasks3.jpg" alt="Task 3">
+                <img src="tasks4.jpg" alt="Task 4">
+            </div>
+            <p>Task management helps you assign, monitor, and complete tasks, ensuring that farm operations run smoothly.</p>
+            <button onclick="location.href='tasks.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Labor</h2>
+            <div class="images">
+                <img src="labor1.jpg" alt="Labor 1">
+                <img src="labor2.jpg" alt="Labor 2">
+                <img src="labor3.jpg" alt="Labor 3">
+                <img src="labor4.jpg" alt="Labor 4">
+            </div>
+            <p>Manage your workforce effectively, tracking labor hours, productivity, and resource allocation.</p>
+            <button onclick="location.href='labor.html'">Explore</button>
+        </div>
+        <div class="component">
+            <h2>Expenses</h2>
+            <div class="images">
+                <img src="expenses1.jpg" alt="Expense 1">
+                <img src="expenses2.jpg" alt="Expense 2">
+                <img src="expenses3.jpg" alt="Expense 3">
+                <img src="expenses4.jpg" alt="Expense 4">
+            </div>
+            <p>Track farm expenses meticulously, helping you manage costs and improve financial performance.</p>
+            <button onclick="location.href='expenses.html'">Explore</button>
+        </div>
+    </div>
+
+</body>
+</html>
+                                         body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.transparent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.component {
+    flex: 1 1 250px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+}
+
+.component h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.component .images {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.component img {
+    width: 100px;
+    height: 75px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.component img:hover {
+    transform: scale(1.1);
+}
+
+.component p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.component button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.component button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+.component button:active {
+    transform: scale(0.95);
+    background-color: rgba(255, 215, 0, 0.9);
+}
+
+now fix the nav not to be stationary when you scroll down
+
+css for perfect.
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better visibility */
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjusted container to be fully visible and centered */
+.transparent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 80vh;  /* Ensures the container doesn't overflow the screen */
+    overflow-y: auto;  /* Adds scrolling if necessary */
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.component {
+    flex: 1 1 250px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+}
+
+.component h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.component .images {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.component img {
+    width: 100px;
+    height: 75px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.component img:hover {
+    transform: scale(1.1);
+}
+
+.component p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.component button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.component button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+.component button:active {
+    transform: scale(0.95);
+    background-color: rgba(255, 215, 0, 0.9);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}

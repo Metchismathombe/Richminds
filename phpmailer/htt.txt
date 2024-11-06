@@ -1,0 +1,210 @@
+HACKER
+BUSINESS
+UNIVERSITY
+Hack The Box: Cybersecurity Training
+Products
+Resources
+Company
+
+Website Terms
+– Please read carefully –
+
+www.hackthebox.com website (hereinafter “WEBSITE”) has been created by Hack The Box Ltd, with a registered office address at 38 Walton Road, Folkestone, Kent, United Kingdom, CT19 5QS, registered in England and Wales, Reg No. 10826193 (hereinafter “HTB”), in order to provide information and access to services for Users of the WEBSITE.
+
+IMPORTANT
+This is a binding Agreement between HTB and the User of the WEBSITE. By using the WEBSITE YOU AGREE TO THESE TERMS AND CONDITIONS.In case of disagreement with the terms and conditions of use, the User must not use the services and the content of the WEBSITE and FORUM.
+
+1. Agreement to terms and conditions of use
+Before visiting or using our webpages and services, read carefully the following Terms and Conditions of Use of the WEBSITE & Forum. Every time you make use of the WEBSITE & Forum you agree that you accept fully and without any reservation the Terms and Conditions of Use contained herein and undertake to comply with them.
+
+Registration to use the Website & Forum is restricted to individuals who are 18 years of age or older or those who possess legal parental or guardian consent and are fully able and competent to enter into the terms, conditions, obligations, and representations herein. By registering to use the WEBSITE & Forum, you hereby represent that you meet one of the criteria set forth above and HTB is not responsible for any use by Users who do not meet the above properties.
+
+In case of disagreement with the terms and conditions of use, the User must not use the services and the content of the WEBSITE & Forum.
+
+HTB may temporarily or permanently discontinue operation of the WEBSITE & Forum for any reason and at any time. HTB reserves the right to make modifications and updates on the WEBSITE & Forum and its contents, layout and presentation, at any time and without prior notice. These Terms and Conditions of Use can be reviewed and up-dated at any moment and without previous warning. Therefore Users must read this document carefully each time before they make use of the WEBSITE & Forum.
+
+2. Intellectual property rights
+The entire content of the WEBSITE & Forum, including for example, text, graphics, photos, digital phonograms, programs, representations source code, news, articles, information, data, drawings, illustrations, trademarks, distinctive marks, names, logos, product names, company names, services provided etc and in general, archives of every kind is subject to copyright which belongs exclusively to the HTB or its content suppliers and is governed by the applicable National, European and International provisions on Intellectual Property. Furthermore is made available to Users strictly for personal (non-commercial – non-profit) use.
+
+Is expressly prohibited any copying, reproduction, republication, transfer, storage, processing, transmission, distribution, sale, issuance, execution, loading (download), translation or modification in any manner, communication, dissemination or any other use of the content of the WEBSITE in any manner or means, for commercial or other purposes whatsoever, in part or in summary form, without the prior written consent of the HTB.
+
+Nothing contained on the WEBSITE & Forum should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any HTBs Intellectual Property without the prior written consent of HTB.
+
+All goodwill generated from the use of any HTBs Intellectual Property shall inure to HTBs benefit. HTB reserves the right to seek all remedies available for any violation of these terms and conditions.
+
+Any other trademarks, badges, product names, company names, graphics and logos registered trademarks and intellectual property rights of third parties that appear on this WEBSITE are the property of their respective owners and within their sphere of responsibility.
+
+For any question relating to the reproduction rights of any part of the WEBSITE & Forum, as well as for applications for authorization regarding reproduction of content, please contact us under info@hackthebox.eu.
+
+3. Rights and Obligations of the User
+User must abstain from any unlawful, inappropriate and abusive use of the content and the services provided on this WEBSITE at all times, in accordance with the existing legislation, and respect the intellectual property rights of HTB.
+Users may not carry out any action via the services made available to them by HTB which will cause damage to or alteration of the WEBSITE’s content, or hinder the correct functioning of the same.
+Users may not cause any technical problems of any type, transfer elements likely to carry computer virus or which may totally or partially damage, interfere with or intercept this WEBSITE or property of others.
+Users may not use the web site for business, advertising, self-promotion or promotion of third parties without the express written permission of HTB.
+Users are required to gain their entry and create an HTB User account to access and use some parts of the WEBSITE.
+Users are solely responsible for their Username and password. Login information is individual and non-transferable. If Users account is lost, forgotten or has been modified or stolen he should contact us as soon as possible so we can take the necessary actions.
+Users must behave properly, kindly and with discretion during visiting and using the WEBSITE, whereas the adoption of unfair competition practices or other which are contrary to NETIQUETTE (http://www.albion.com/netiquette/corerules.html) are strictly forbidden
+Users must not share in any way any of the “solutions” to the “machines” or "challenges" included in the WEBSITE, save the retired ones.
+Users must not share in any way any of the “solutions” to the “pro labs” included in the WEBSITE.
+Users may practice to the predetermined areas for them to use.
+Users may upload their “machines” and “challenges” in the Website in accordance with the Terms and Conditions of Use.
+Users may acquire a paid subscription in accordance with the Terms and Conditions of Use.
+Users may join the Forum in accordance with the Terms and Conditions of Use.
+IMPORTANT
+Users are liable for any expenses (any cost caused by the behavior of the User and which would otherwise not occur) or damages they may incur through inappropriate use or non-compliance with these terms and conditions of use.
+
+4. “Machines” and “Challenges” uploaded by Users
+Users may upload their own "machine" or "challenge" on the WEBSITE for other Users to practice in penetration / security testing but only with the previous expressed permission of HTB and under the following conditions:
+
+Machines
+For the first six months, the User/creator of the “machine” - grants Hack The Box exclusive rights of use and distribution of the “machine”.
+During the first six months, the creator cannot upload the “machine” to another site or publish or share in general anywhere the "solution" of the “machine”.
+After the period of six months the User/creator of the “machine” - grants Hack The Box non-exclusive rights of use and distribution of the “machine”.
+The name of the User/creator of the “machine” – will be visible on the “machine”, unless otherwise agreed.
+Challenges
+User/creator cannot publish or share in general anywhere the "solution" of the “challenge”.
+User/creator of the “challenge” - grants Hack The Box non-exclusive rights of use and distribution of the “challenge”.
+The name of the User/creator of the “challenge” – will be visible on the “challenge”, unless otherwise agreed.
+5. Limitation of liability
+The content of the WEBSITE & Forum is made available as it stands and HTB does not provide any guarantee, explicit or no, on the technical quality, soundness, timeliness, commercial potential, appropriateness of its content related to every use, application or purpose.
+
+HTB does not guarantee that the webpages, services, options and contents will be provided without interruption, errors, or that every single error will be corrected and that all the questions submitted will be answered.
+
+HTB does not guarantee that the WEBSITE & Forum or any other associated website or servers, through which the content is made available to the Users, are provided without any “virus” or harmful component. The User’s entry to the “closed network” - (“HTB Network”) shall be performed under his own responsibility.
+
+Anything provided to the Users through our WEBSITE & Forum shall not be regarded in any way, directly or indirectly, as stimulation, advice or instigation to commitment of any unlawful action. All publications or services provided have a clear educational purpose, such as upgrading User’s skills in penetration/security testing. Every User acts based upon his private will and ethics being the sole responsible for his actions.
+
+HTB bares no responsibility for any misuse and/or inappropriate use of the services of the WEBSITE & Forum by a User. For any damages caused , to the WEBSITE & Forum, to the Network, to another User or to any third Party, the sole responsible is the User that carried out the above mentioned actions.
+
+HTB under no circumstances, including the case of negligence, shall be held responsible for any kind of damage, which the User of the WEBSITE & Forum may suffer given that they access on their own initiative.
+
+6. Links
+WEBSITE & Forum may contain links to other portals or websites not administered by HTB. HTB hereby declares that it has no control over such portals or websites which are subject to their own corresponding terms of use, and is not responsible for their content and under no circumstances it gives rise to obligations of any kind for anyone. Any links featuring on this WEBSITE & Forum will be for informative and reference purposes only.
+
+The placing of these links does not indicate approval or acceptance of the content of the corresponding websites by HTB. Third party websites that may be reached through our WEBSITE & Forum are not subject to the principles laid down herein. HTB does not accept any responsibility or liability, does not guarantee their availability and bares no responsibility for any of their content and services, neither for their protection of confidentiality practices.
+
+User will make use of such links on his own responsibility and for any problems, that may arise during the visit or the use of these websites, User should address to the corresponding website.
+
+7. Protection of Personal Data
+The handling and the protection of the User’s personal data of the WEBSITE is subject to the terms of this Agreement, as well as to the applicable provisions of National, European and international law regarding the protection against the processing of personal data, as applicable at any given moment.
+
+Any possible future arrangement will be subject to this Agreement. In any case HTB maintains the right to re-adapt requirements for protection of personal data, always in accordance with the existing legislative framework.
+
+Therefore, these conditions of protection of personal data can be reviewed and up-dated at any moment without previous warning. The Users of WEBSITE & Forum are kindly asked to check at regular intervals the terms of use of any changes, given that the continuous use of WEBSITE & Forum confers a presumption that the User has read, understand and accepted all the possible modifications of it.
+
+HTB collects personal information of the Users of WEBSITE & Forum, only if they provide them intentionally and with a view of acquiring an account code and a password in order to use and to access some services like forums, blogs etc , or classified information according to the User’s status etc.
+
+As personal data is considered the information that can be used to identify a person, to contact them and/ or to obtain further information about them.
+
+HTB will not provide any personal information for sale, or transmit, or make public personal data of the visitors/ Users to third parties, which are not connected to us, without the consent of the User, with the exception of the implementation of legal impositions and only to the competent authorities.
+
+HTB may process part or all of the information provided by the visitors/ Users for statistical purposes and/ or in order to improve its services and information.
+
+The User can contact HTB, in order to crosscheck the existence of any personal archive, the correction, modification or erasure of it by sending an e-mail to the following e-mail address: info@hackthebox.eu.
+
+HTB may collect information on the identification of the Users of WEBSITE & Forum, using corresponding technology, like cookies and/ or by monitoring Internet Protocol addresses (IP). You can get analytical information about the cookies on www.allaboutcookies.org. In case that the User does not wish the use of cookies, they can exclude their creation adjusting the arrangements of their browser.
+
+The HTB relies on third parties to process credit/debit card transactions so the HTB necessarily must share payment information with third parties.
+
+It is possible that this webpage contains links to other websites, which are under the responsibility of third parties (persons or legal entities). Under no circumstances HTB is responsible for the data protection, which the third parties adopt and apply.
+
+8. Compensation - Indemnity
+It is explicitly agreed hereby that in case of an action/application or claim, administrative, accounting or judicial, being brought against our portal deriving from actions committed by the User, the User undertakes on the one hand to intervene to the legal procedure, assuming their responsibility, and on the other hand to compensate HTB, the operators, officers, directors, employees, agents, licensors, and suppliers of our WEBSITE & Forum in case they are obliged to compensate or to pay any other expenditure.
+
+9. Forum
+The HTB forum (“FORUM”) is provided as a service to enable HTB community members to interact with each other. The User interested in registering to post content in our Forum, he acknowledges that he has read, understood and agreed to these Terms and Conditions of Use.
+
+Content in the Forum is User-generated, and posts constitute the views and opinions of the author and not of HTB. HTB assumes no responsibility for any of the content posted to the Forum, including the accuracy of statements made by Users about HTB.
+
+User may use the Forum for the sole purpose of sharing and exchanging ideas with community members and other Users. User agrees to use the Forum in accordance with all applicable laws.
+
+User shall not upload or transmit any material that infringes or misappropriates any person’s copyright, patent, trademark, or trade secret, nor should you disclose in forum posts any information the disclosure of which would constitute a violation of any confidentiality obligations you may have, including, but not limited to, obligations contained in a non-disclosure agreement.
+
+Users are expressly prohibited from compiling and using personal information of other Users that may appear in the forum for the purpose of creating marketing lists or using such information for commercial solicitation purposes.
+
+User agrees that will not access or attempt to access any other User’s account, or misrepresent or attempt to misrepresent his identity while using the FORUM.
+
+User is prohibited from posting or transmitting any of the following content anywhere in the Forum or on any other HTB Webpage:
+
+Content unlawful, harmful, offensive, threatening, abusive, libelous, harassing, defamatory, vulgar, obscene, profane, hateful, fraudulent, sexually explicit, racially, ethnically, or otherwise objectionable material of any sort, including, but not limited to, any material that encourages conduct that would constitute a criminal offense, give rise to civil liability, or otherwise violate any applicable National, European or International law.
+Unauthorized copyrighted material or material that infringes another’s intellectual property
+Content that is confidential or subject to a non-disclosure agreement
+Advertising or any form of commercial solicitation
+Communications that could be confused with official communications of HTB or another User
+Content that is otherwise offensive or objectionable
+Content with viruses, worms, Trojan horses, or other forms of harmful computer code, nor subject the website's network or servers to unreasonable traffic loads, or otherwise engage in conduct deemed disruptive to the ordinary operation of the website.
+In the event you believe that material or content published on the Website may infringe on your copyright or that of another, please contact us at info@hackthebox.eu.
+
+HTB and the moderators shall have no liability whatsoever related to the content of communications posted to the forum, whether arising under the laws of copyright, libel, privacy, obscenity, or otherwise. Users are sole responsible for their actions.
+
+HTB reserves the right to remove content from the forum at its sole discretion at any time.
+
+10. Paid subscription
+User may acquire a paid subscription in order to access predetermined services in accordance with these Terms and Conditions of Use.. The benefits provided for each category will be posted in the WEBSITE.
+
+11. Terms of Payment
+Due to their nature, the paid Services provided by the HTBs WEBSITE are generally non-refundable and any refunds or credits given will be at the sole discretion of the HTB. If HTB chooses to issue a refund for any reason, HTB is only obligated to refund in the original currency of payment (GBP). Paid accounts which are terminated due to a violation of these Terms and Conditions will incur the loss of all payments and credits and are not eligible for refund.
+
+HTB reserves the right to discontinue service immediately if a fraudulent payment is detected, such as the use of a stolen credit card, and such cases may be further referred to the competent authorities.
+
+User will have access to the predetermined services after he has first payed the predetermined amount.
+
+HTB enables the user to choose between two payment options: a) annual subscription and b) monthly subscription with automatic payment for each subsequent month. In any case, the payment is paid in advance of the service provided.
+
+User authorizes HTB to charge any credit card supplied on a monthly re-occurring basis. Credit balances will also automatically be deducted on a monthly basis.
+
+In the event that modified the amount required or the services provided, the User will be informed immediately and directly via email. In this case, if the User does not agree he will have to revoke the permission for HTB to take automatic payments out of his bank account.
+
+If the User wishes to terminate automatic payments, User must either make use of the existing option on the WEBSITE or send an email at billing@hackthebox.eu stating that he wishes to terminate the service provided and that he revokes permission for HTB to take automatic payments out of his/her bank account. Such revocation shall be effective from the date of the sent email, regarding the scheduled payment that follow that date.
+
+User is responsible for keeping card information up to date.
+
+Paid subscriptions that become delinquent will be suspended immediately.
+
+12. Moderators
+Volunteer moderators may, but are not obligated to facilitate and assist the User during his stay at the WEBSITE and to monitor or review the content of any communications that are posted to the Forum. Moderators are not employees or contractors of HTB, but are serving as moderators in their capacities as community members. HTB bares no responsibility for any of their actions contrary to this Agreement and/or the applicable Laws.
+
+13. Governing Law and Jurisdiction.
+This Agreement shall be governed by and construed in accordance with the law of England and Wales, without regard to any statutory or common-law provision pertaining to conflicts of laws. Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this agreement (including non-contractual disputes or claims).
+
+Not withstanding the foregoing, nothing in this Agreement shall prevent HackTheBox enforcing its Intellectual Property Rights in other jurisdictions.
+
+If you are acting as an individual consumer and if mandatory statutory consumer protection regulations in your country of residence contain provisions that are more beneficial for you, such provisions shall apply irrespective of the choice of English law.
+
+Any provision of the terms mentioned above which is contrary to the legislative framework or has been outdated, will be assumed as inoperative automatically and it shall be removed from the present document without affecting the force of the remaining terms.
+
+14. Notices
+Notices, requests, permissions, waivers, and other communications required or permitted hereunder shall be in writing and shall be mailed by registered or certified mail, sent by electronic mail or otherwise delivered by hand.
+
+15. Contact
+If you wish to communicate with Hack The Box Ltd, please contact us by sending an e-mail to the following address info@hackthebox.eu. Furthermore, if you have noted any kind of problems in the content of the node related with legal or moral issues, in particular regarding the reproduction and the use of intellectual property rights, you are kindly asked to let us know under the e-mail address legal@hackthebox.eu.
+
+Hack The Box: Cybersecurity Training
+HACKER
+BUSINESS
+UNIVERSITY
+        
+Company
+About Us
+Careers
+Swag
+Gift Cards
+News
+Newsletter
+Partners
+Resources
+Knowledge Base
+Blog
+Forum
+Testimonials
+Certificate Validation
+Players
+Teams
+© 2024 Hack The Box
+Legal & Compliance
+Acceptable Use Policy
+Website T&Cs
+Privacy Notice
+Cookie Settings
+
+Feedback
